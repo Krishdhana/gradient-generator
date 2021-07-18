@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  color: rgba(255, 255, 255, 0.87);
+  margin: 5rem;
+  text-align: center;
+}
+
+.title p:first-child {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.title p:last-child {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.generated {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.87);
+  letter-spacing: 2px;
+}
+
+.bgcolor {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 4rem;
+}
+
+.color-option {
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.btn {
+  min-width: 150px;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  transition: all 0.4s;
+}
+
+.btn:hover,
+.color-option:hover {
+  box-shadow: 0 0 20px 0px rgba(3, 0, 0, 0.212);
+  transform: scale(105%);
+  z-index: 5;
+}
